@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | AI & Cybersecurity Expert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-dark text-light">
+    <!-- Background Canvas -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Overlay / Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="glitch" data-text="INITIALIZING...">INITIALIZING...</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="text-neon-blue">DEV</span><span class="text-neon-purple">_SYSTEMS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="sub-headline">SISTEMA ATIVO // v1.0.4</h2>
+                    <h1 class="headline">
+                        <span class="glitch" data-text="FULLSTACK">FULLSTACK</span><br>
+                        <span class="text-neon-blue">DEVELOPER</span> & <br>
+                        <span class="text-neon-purple">AI ARCHITECT</span>
+                    </h1>
+                    <p class="hero-description">
+                        Desenvolvedor focado em IA, Automação, Cybersecurity e Sistemas de Alta Complexidade.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-neon">EXPLORAR PROJETOS</a>
+                        <a href="#contact" class="btn btn-outline">CONTATO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>SCROLL DOWN</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-neon-blue">01.</span> SOBRE_MIM</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Desenvolvedor autodidata apaixonado por tecnologia, automação e inteligência artificial. Minha jornada é movida pela curiosidade de entender como sistemas complexos funcionam, desde a engenharia reversa até a criação de arquiteturas neurais avançadas.</p>
+                        <p>Especializado em criar sistemas CLI/TUI profissionais, ferramentas de automação inteligente e plataformas de análise de dados quantitativos. Tenho um background sólido em Cybersecurity e OSINT, o que me permite construir soluções não apenas eficientes, mas extremamente seguras.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-num text-neon-blue">IA</span>
+                                <span class="stat-label">Modelos Preditivos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num text-neon-purple">SEC</span>
+                                <span class="stat-label">Cybersecurity</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num text-neon-green">AUTO</span>
+                                <span class="stat-label">Automações</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <div class="image-border"></div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-neon-purple">02.</span> TECH_STACK</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code text-neon-blue"></i> LINGUAGENS</h3>
+                        <div class="skill-list">
+                            <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="fill" style="width: 95%"></div></div></div>
+                            <div class="skill-item"><span>JavaScript/TS</span><div class="skill-bar"><div class="fill" style="width: 90%"></div></div></div>
+                            <div class="skill-item"><span>Go / Rust</span><div class="skill-bar"><div class="fill" style="width: 80%"></div></div></div>
+                            <div class="skill-item"><span>C#</span><div class="skill-bar"><div class="fill" style="width: 75%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain text-neon-purple"></i> AI & DATA</h3>
+                        <div class="skill-list">
+                            <div class="skill-item"><span>Transformers / NLP</span><div class="skill-bar"><div class="fill" style="width: 85%"></div></div></div>
+                            <div class="skill-item"><span>TensorFlow / PyTorch</span><div class="skill-bar"><div class="fill" style="width: 80%"></div></div></div>
+                            <div class="skill-item"><span>Pandas / Scikit-Learn</span><div class="skill-bar"><div class="fill" style="width: 90%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-shield-alt text-neon-green"></i> CYBER & OPS</h3>
+                        <div class="skill-list">
+                            <div class="skill-item"><span>Linux / WSL</span><div class="skill-bar"><div class="fill" style="width: 95%"></div></div></div>
+                            <div class="skill-item"><span>Reverse Engineering</span><div class="skill-bar"><div class="fill" style="width: 75%"></div></div></div>
+                            <div class="skill-item"><span>Docker / Git</span><div class="skill-bar"><div class="fill" style="width: 85%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-neon-green">03.</span> PROJETOS_CORE</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">AlphaScope</h3>
+                            <p class="project-desc">Terminal quantitativo de criptomoedas com IA para análise de mercado, backtesting e trading automatizado. Integração Binance e alertas via Telegram.</p>
+                            <ul class="project-tech">
+                                <li>Python</li>
+                                <li>TensorFlow</li>
+                                <li>FastAPI</li>
+                                <li>Redis</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">SkinScope</h3>
+                            <p class="project-desc">Sistema inteligente para análise de caixas e skins de CS2 usando Simulação de Monte Carlo e Machine Learning para probabilidades reais.</p>
+                            <ul class="project-tech">
+                                <li>TypeScript</li>
+                                <li>Node.js</li>
+                                <li>Scikit-Learn</li>
+                                <li>React</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Universal AI Voice</h3>
+                            <p class="project-desc">Sistema avançado de síntese e refinamento de voz integrando múltiplas IAs para resultados hiper-realistas e clonagem vocal.</p>
+                            <ul class="project-tech">
+                                <li>Python</li>
+                                <li>PyTorch</li>
+                                <li>HuggingFace</li>
+                                <li>Flask</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-neon-purple">04.</span> SYSTEM_STATS</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="dashboard-container">
+                    <div class="dashboard-grid">
+                        <div class="dashboard-item main-stat">
+                            <div class="stat-header">NEURAL_NET_STATUS</div>
+                            <div class="stat-content">
+                                <div class="stat-value text-neon-green">ACTIVE</div>
+                                <div class="stat-sub">Uptime: 99.98%</div>
+                                <div class="wave-container">
+                                    <div class="wave"></div>
+                                    <div class="wave"></div>
+                                    <div class="wave"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-item">
+                            <div class="stat-header">CYBER_THREAT_LEVEL</div>
+                            <div class="stat-content">
+                                <div class="stat-value text-neon-blue">LOW</div>
+                                <div class="stat-sub">Active Shields: 24/24</div>
+                            </div>
+                        </div>
+                        <div class="dashboard-item">
+                            <div class="stat-header">AUTOMATION_EFFICIENCY</div>
+                            <div class="stat-content">
+                                <div class="stat-value text-neon-purple">94%</div>
+                                <div class="stat-sub">Tasks Optimized: 1.2k</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-neon-blue">05.</span> EVOLUÇÃO_SISTEMA</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="timeline-wrapper">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-content">
+                            <h3>Fullstack AI Engineer</h3>
+                            <p>Especialização em arquiteturas de Transformers e sistemas quantitativos automatizados de alto desempenho.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Cybersecurity Specialist</h3>
+                            <p>Foco em análise de vulnerabilidades, engenharia reversa e ferramentas avançadas de OSINT.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h3>Automation Developer</h3>
+                            <p>Criação de bots inteligentes e ferramentas de web scraping escaláveis para mineração de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-neon-blue">04.</span> CONTACT_INIT</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>ESTABELECER CONEXÃO</h3>
+                        <p>Estou sempre aberto a novos desafios, colaborações em projetos de IA ou consultorias de automação e segurança.</p>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-envelope text-neon-blue"></i> terminal@devsystems.ia</li>
+                            <li><i class="fab fa-github text-neon-purple"></i> github.com/cyber-expert</li>
+                            <li><i class="fab fa-linkedin text-neon-green"></i> linkedin.com/in/dev-ai</li>
+                        </ul>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="NOME_USUÁRIO" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="EMAIL_CONTATO" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="MENSAGEM_CRIPTOGRAFADA" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-neon">ENVIAR_PACOTE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo logo">
+                    <span class="text-neon-blue">DEV</span><span class="text-neon-purple">_SYSTEMS</span>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2026 DESIGNED & BUILT BY CYBER_EXPERT. ALL RIGHTS RESERVED.
+                </div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/three-bg.js"></script>
+</body>
+</html>
