@@ -7,7 +7,38 @@ document.addEventListener('DOMContentLoaded', () => {
     initLoader();
     initNavbar();
     initGSAP();
+    loadProjects();
 });
+
+// Load Projects Dinamicamente
+async function loadProjects() {
+    const projectsGrid = document.querySelector('.projects-grid');
+    try {
+        const response = await fetch('projects.json');
+        const projects = await response.json();
+        
+        projectsGrid.innerHTML = projects.map(project => `
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-desc">${project.desc}</p>
+                    <ul class="project-tech">
+                        ${project.tech.map(t => `<li>${t}</li>`).join('')}
+                    </ul>
+                    <div class="project-links">
+                        <a href="${project.github}" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="${project.demo}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+        
+        // Refresh ScrollTrigger since new elements were added
+        ScrollTrigger.refresh();
+    } catch (error) {
+        console.error("Erro ao carregar projetos:", error);
+    }
+}
 
 // Loader Animation
 function initLoader() {

@@ -1,0 +1,23 @@
+[
+    {
+        "title": "AlphaScope",
+        "desc": "Terminal quantitativo de criptomoedas com IA para análise de mercado, backtesting e trading automatizado.",
+        "tech": ["Python", "TensorFlow", "FastAPI", "Redis"],
+        "github": "#",
+        "demo": "#"
+    },
+    {
+        "title": "SkinScope",
+        "desc": "Sistema inteligente para análise de caixas e skins de CS2 usando Simulação de Monte Carlo e Machine Learning.",
+        "tech": ["TypeScript", "Node.js", "Scikit-Learn", "React"],
+        "github": "#",
+        "demo": "#"
+    },
+    {
+        "title": "Universal AI Voice",
+        "desc": "Sistema avançado de síntese e refinamento de voz integrando múltiplas IAs para resultados hiper-realistas.",
+        "tech": ["Python", "PyTorch", "HuggingFace", "Flask"],
+        "github": "#",
+        "demo": "#"
+    }
+]
