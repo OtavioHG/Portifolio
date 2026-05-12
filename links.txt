@@ -1,0 +1,21 @@
+linkdin: https://www.linkedin.com/in/otavio-henrique-gregorio/
+GitHub:  https://github.com/OtavioHG
+Email1:  otaviobhzero@gmail.com
+Email2:  otaviohenriquegregorio@gmail.com
+AlphaScope: https://github.com/OtavioHG/alphascope
+SkinScope:  https://github.com/OtavioHG/SkinScope
+https://github.com/OtavioHG/Chmados
+https://github.com/OtavioHG/Registro-de-Turmas-
+https://github.com/OtavioHG/Login-com-o-Google-Flask-
+https://github.com/OtavioHG/Logica-de-progrma-ao-python-
+https://github.com/OtavioHG/POO-python
+https://github.com/OtavioHG/POO-cripitografia-Simples-
+https://github.com/OtavioHG/Codigo-POO-Kin
+https://github.com/OtavioHG/Aquecimento-de-Redes-Neurais
+https://github.com/OtavioHG/Teste-de-Hospedagem
+https://github.com/OtavioHG/Wireshark-Python
+https://github.com/OtavioHG/Coletador-de-dados-
+https://github.com/OtavioHG/nmep-GO-simples-
+https://github.com/OtavioHG/Jogo-da-velha-em-Go-
+https://github.com/OtavioHG/Projeto-Rede-NARI-
+https://github.com/OtavioHG/Codigos-LitCode

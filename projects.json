@@ -1,84 +1,108 @@
 [
     {
         "title": "AlphaScope",
+        "titleEn": "AlphaScope",
         "desc": "Terminal quantitativo de criptomoedas com IA para análise de mercado, backtesting e trading automatizado.",
+        "descEn": "A quantitative crypto terminal featuring AI market analysis, backtesting, and automated trading.",
         "tech": ["Python", "TensorFlow", "FastAPI", "Redis"],
         "github": "https://github.com/OtavioHG/alphascope",
         "demo": "#"
     },
     {
         "title": "SkinScope",
+        "titleEn": "SkinScope",
         "desc": "Sistema inteligente para análise de caixas e skins de CS2 usando Simulação de Monte Carlo e Machine Learning.",
+        "descEn": "An intelligent CS2 skin/case analysis platform powered by Monte Carlo simulations and Machine Learning.",
         "tech": ["TypeScript", "Node.js", "Scikit-Learn", "React"],
         "github": "https://github.com/OtavioHG/SkinScope",
         "demo": "#"
     },
     {
         "title": "NARI Network Project",
+        "titleEn": "NARI Network Project",
         "desc": "Projeto avançado envolvendo integração de sistemas e arquitetura de redes inteligentes.",
+        "descEn": "Advanced project involving systems integration and intelligent network architecture.",
         "tech": ["Python", "Networking", "AI"],
         "github": "https://github.com/OtavioHG/Projeto-Rede-NARI-",
         "demo": "#"
     },
     {
         "title": "Neural Networks Warmup",
+        "titleEn": "Neural Networks Warmup",
         "desc": "Implementações experimentais e aquecimento em arquiteturas de Redes Neurais.",
+        "descEn": "Experimental implementations and warm-up in Neural Network architectures.",
         "tech": ["Python", "PyTorch", "Deep Learning"],
         "github": "https://github.com/OtavioHG/Aquecimento-de-Redes-Neurais",
         "demo": "#"
     },
     {
         "title": "Wireshark Python Tool",
+        "titleEn": "Wireshark Python Tool",
         "desc": "Ferramenta de análise de pacotes e automação de monitoramento de rede usando Python.",
+        "descEn": "Packet analysis tool and network monitoring automation using Python.",
         "tech": ["Python", "Networking", "Cybersecurity"],
         "github": "https://github.com/OtavioHG/Wireshark-Python",
         "demo": "#"
     },
     {
         "title": "Data Collector",
+        "titleEn": "Data Collector",
         "desc": "Coletador de dados automatizado para mineração e análise de informações em escala.",
+        "descEn": "Automated data collector for large-scale information mining and analysis.",
         "tech": ["Python", "Web Scraping", "Automation"],
         "github": "https://github.com/OtavioHG/Coletador-de-dados-",
         "demo": "#"
     },
     {
         "title": "LeetCode Solutions",
+        "titleEn": "LeetCode Solutions",
         "desc": "Repositório de algoritmos e resolução de problemas complexos de lógica e estrutura de dados.",
+        "descEn": "Algorithm repository and resolution of complex logic and data structure problems.",
         "tech": ["Algorithms", "Data Structures", "Python"],
         "github": "https://github.com/OtavioHG/Codigos-LitCode",
         "demo": "#"
     },
     {
         "title": "Google Login Flask",
+        "titleEn": "Google Login Flask",
         "desc": "Sistema de autenticação segura utilizando OAuth2 do Google integrado ao Flask.",
+        "descEn": "Secure authentication system using Google OAuth2 integrated with Flask.",
         "tech": ["Python", "Flask", "OAuth2"],
         "github": "https://github.com/OtavioHG/Login-com-o-Google-Flask-",
         "demo": "#"
     },
     {
         "title": "Nmap GO Simple",
+        "titleEn": "Nmap GO Simple",
         "desc": "Scanner de rede simplificado inspirado no Nmap, desenvolvido em Go para alta performance.",
+        "descEn": "Simplified network scanner inspired by Nmap, developed in Go for high performance.",
         "tech": ["Go", "Networking", "CLI"],
         "github": "https://github.com/OtavioHG/nmep-GO-simples-",
         "demo": "#"
     },
     {
         "title": "Simple POO Crypto",
+        "titleEn": "Simple OOP Crypto",
         "desc": "Implementação de lógica de criptografia básica utilizando Programação Orientada a Objetos.",
+        "descEn": "Basic cryptography logic implementation using Object-Oriented Programming.",
         "tech": ["Python", "Cryptography", "POO"],
         "github": "https://github.com/OtavioHG/POO-cripitografia-Simples-",
         "demo": "#"
     },
     {
         "title": "Tic-Tac-Toe Go",
+        "titleEn": "Tic-Tac-Toe Go",
         "desc": "Desenvolvimento do clássico Jogo da Velha em Go para estudo de lógica concorrente.",
+        "descEn": "Development of the classic Tic-Tac-Toe game in Go for concurrent logic studies.",
         "tech": ["Go", "Game Dev"],
         "github": "https://github.com/OtavioHG/Jogo-da-velha-em-Go-",
         "demo": "#"
     },
     {
         "title": "Python Logic & POO",
+        "titleEn": "Python Logic & OOP",
         "desc": "Fundamentos sólidos de lógica de programação e POO aplicados em Python.",
+        "descEn": "Solid foundations of programming logic and OOP applied in Python.",
         "tech": ["Python", "Logic", "POO"],
         "github": "https://github.com/OtavioHG/POO-python",
         "demo": "#"

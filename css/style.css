@@ -106,6 +106,27 @@ canvas {
     padding: 1rem 0;
 }
 
+.lang-switch {
+    margin: 0 1.5rem;
+}
+
+.btn-lang {
+    background: transparent;
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 5px 10px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-lang:hover {
+    background: var(--neon-blue);
+    color: var(--bg-dark);
+    box-shadow: 0 0 10px var(--neon-blue);
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;

@@ -8,7 +8,35 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initGSAP();
     loadProjects();
+    initLanguage();
 });
+
+// Language Logic
+let currentLang = 'pt';
+
+function initLanguage() {
+    const langToggle = document.getElementById('lang-toggle');
+    langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'pt' ? 'en' : 'pt';
+        langToggle.textContent = currentLang === 'pt' ? 'EN' : 'PT';
+        updateLanguage();
+    });
+}
+
+function updateLanguage() {
+    const elements = document.querySelectorAll('[data-en]');
+    elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+    });
+
+    const placeholders = document.querySelectorAll('[data-placeholder-en]');
+    placeholders.forEach(el => {
+        el.placeholder = el.getAttribute(`data-placeholder-${currentLang}`);
+    });
+
+    // Reload projects with correct language
+    loadProjects();
+}
 
 // Load Projects Dinamicamente
 async function loadProjects() {
@@ -17,21 +45,26 @@ async function loadProjects() {
         const response = await fetch('projects.json');
         const projects = await response.json();
         
-        projectsGrid.innerHTML = projects.map(project => `
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-desc">${project.desc}</p>
-                    <ul class="project-tech">
-                        ${project.tech.map(t => `<li>${t}</li>`).join('')}
-                    </ul>
-                    <div class="project-links">
-                        <a href="${project.github}" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="${project.demo}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        projectsGrid.innerHTML = projects.map(project => {
+            const desc = currentLang === 'en' ? (project.descEn || project.desc) : project.desc;
+            const title = currentLang === 'en' ? (project.titleEn || project.title) : project.title;
+            
+            return `
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">${title}</h3>
+                        <p class="project-desc">${desc}</p>
+                        <ul class="project-tech">
+                            ${project.tech.map(t => `<li>${t}</li>`).join('')}
+                        </ul>
+                        <div class="project-links">
+                            <a href="${project.github}" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="${project.demo}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `).join('');
+            `;
+        }).join('');
         
         // Refresh ScrollTrigger since new elements were added
         ScrollTrigger.refresh();
